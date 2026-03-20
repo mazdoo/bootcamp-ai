@@ -1,3 +1,9 @@
-Paris : 15°C (ressenti 15°C) — Overcast
-Lyon : 15°C (ressenti 15°C) — Clear
-Marseille : 14°C (ressenti 14°C) — Clear
+Paris : 6°C (ressenti 5°C) — Overcast
+Lyon : 3°C (ressenti 3°C) — Clear
+Marseille : 8°C (ressenti 7°C) — Clear
+Rennes : 5°C (ressenti 3°C) — Clear
+Bordeaux : 8°C (ressenti 7°C) — Clear
+Guer : 5°C (ressenti 3°C) — Clear
+Palm coast : 14°C (ressenti 13°C) — Clear
+Miami : 20°C (ressenti 20°C) — Partly cloudy
+Erreur inattendue : HTTPSConnectionPool(host='wttr.in', port=443): Read timed out. (read timeout=10)

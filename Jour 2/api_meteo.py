@@ -28,7 +28,7 @@ def sauvegarder(texte, nom_fichier):
 
 
 # Programme principal
-villes = ["Paris", "Lyon", "Marseille"]
+villes = ["Paris", "Lyon", "Marseille", "Rennes", "Bordeaux", "Guer", "Palm coast", "Miami", "Six-Sur-aff"]
 
 resultats = []
 for ville in villes:

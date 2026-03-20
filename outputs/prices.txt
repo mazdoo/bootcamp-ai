@@ -1,0 +1,10 @@
+📉 Bitcoin (BTC) : $70465 | -1.50% | High: $71535 | Low: $68934 | 🟡 NEUTRAL
+📉 Ethereum (ETH) : $2147.83 | -3.71% | High: $2230.62 | Low: $2104.6 | 🟡 NEUTRAL
+📉 Apple (AAPL) : $248.96 | -0.39% | High: $251.83 | Low: $247.3 | 🟡 NEUTRAL
+📉 Microsoft (MSFT) : $389.02 | -0.71% | High: $392.49 | Low: $387.06 | 🔴 SELL / AVOID
+📉 Amazon (AMZN) : $208.76 | -0.53% | High: $209.12 | Low: $206.06 | 🔴 SELL / AVOID
+📉 Nvidia (NVDA) : $178.56 | -1.02% | High: $179.98 | Low: $175.785 | 🔴 SELL / AVOID
+📉 Tesla (TSLA) : $380.3 | -3.18% | High: $387.205 | Low: $378.73 | 🔴 SELL / AVOID
+📉 Google (GOOGL) : $307.13 | -0.18% | High: $308.04 | Low: $302.35 | 🟡 NEUTRAL
+📉 Meta (META) : $606.7 | -1.46% | High: $613.0 | Low: $602.26 | 🟡 NEUTRAL
+📉 Netflix (NFLX) : $91.74 | -3.13% | High: $95.75 | Low: $90.775 | 🟢 BUY
