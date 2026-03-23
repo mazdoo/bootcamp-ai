@@ -1,23 +1,12 @@
-import os
 from pathlib import Path
 
-# Savoir où tu es
-print(os.getcwd())          # affiche le dossier actuel
+# Afficher le dossier actuel
+print(Path.cwd())
 
-# Construire un chemin qui marche partout
-dossier = Path("Jour 2")
-fichier = dossier / "data.txt"   # le / est une vraie opération !
-print(fichier)              # Jour 2\data.txt
-
-# Vérifier si un fichier existe
-if fichier.exists():
-    print("Le fichier existe")
-else:
-    print("Fichier introuvable")
-
-# Lister tous les fichiers d'un dossier
+# Lister les fichiers du dossier Jour 2
 for f in Path(".").iterdir():
     print(f.name)
 
-# Créer un dossier s'il n'existe pas
+# Créer un dossier outputs
 Path("outputs").mkdir(exist_ok=True)
+print("Dossier outputs créé !")

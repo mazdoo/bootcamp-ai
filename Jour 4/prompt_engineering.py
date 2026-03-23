@@ -1,22 +1,26 @@
-from openai import OpenAI
+import anthropic
 from dotenv import load_dotenv
 import os
 import json
 
 load_dotenv(dotenv_path="C:/Users/kilia/Desktop/Bootcamp IA/Jour 4/.env")
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
 def appeler_llm(system, user):
-    reponse = client.chat.completions.create(
-        model="gpt-4o-mini",
+    reponse = client.messages.create(
+        model="claude-haiku-4-5",
         max_tokens=500,
-        messages=[
-            {"role": "system", "content": system},
-            {"role": "user", "content": user}
-        ]
+        system=system,
+        messages=[{"role": "user", "content": user}]
     )
-    return reponse.choices[0].message.content
-
+    texte = reponse.content[0].text
+    # Nettoyer les backticks si le LLM en ajoute quand même
+    texte = texte.strip()
+    if texte.startswith("```"):
+        texte = texte.split("\n", 1)[1]
+    if texte.endswith("```"):
+        texte = texte.rsplit("```", 1)[0]
+    return texte.strip()
 # TEST 1 - Zero-shot basique
 resultat = appeler_llm(
     system="Tu es un assistant qui répond uniquement en JSON.",
@@ -32,8 +36,6 @@ resultat2 = appeler_llm(
 )
 print("\nZERO-SHOT AMÉLIORÉ :")
 print(resultat2)
-
-# Parser le JSON et extraire un champ
 donnees = json.loads(resultat2)
 print(f"\nPopulation extraite : {donnees['population']}")
 
@@ -51,7 +53,7 @@ Avis: "Conforme à la description." → neutre""",
 print("\nFEW-SHOT (sentiment) :")
 print(resultat3)
 
-# TEST 4 - Chain-of-thought : raisonnement étape par étape
+# TEST 4 - Chain-of-thought
 resultat4 = appeler_llm(
     system="Tu es un assistant logique. Raisonne étape par étape avant de donner ta réponse finale.",
     user="J'ai 3 boîtes. La rouge contient 2 balles. La bleue contient le double de la rouge. La verte contient autant que rouge et bleue réunies. Combien de balles au total ?"
@@ -59,24 +61,20 @@ resultat4 = appeler_llm(
 print("\nCHAIN-OF-THOUGHT :")
 print(resultat4)
 
-# TEST 5 - Extracteur d'infos structuré : use case entreprise
+# TEST 5 - Extracteur d'infos
 texte_brut = """
 Réunion du 21 mars 2026 avec le client Société Générale.
 Participants : Marie Dupont (chef de projet), Jean Martin (développeur).
-Décisions prises : migration vers Azure OpenAI en avril, 
+Décisions prises : migration vers Azure OpenAI en avril,
 budget alloué 50 000 euros, livraison prévue le 15 juin 2026.
 """
 
 resultat5 = appeler_llm(
-    system="""Tu extrais les informations clés d'un compte-rendu de réunion.
-Réponds UNIQUEMENT en JSON valide sans markdown avec ces champs :
-date, client, participants (liste), decisions (liste), budget, deadline""",
+    system="Tu extrais les informations clés d'un compte-rendu de réunion. Réponds UNIQUEMENT en JSON valide sans markdown avec ces champs : date, client, participants (liste), decisions (liste), budget, deadline",
     user=texte_brut
 )
-
 print("\nEXTRACTEUR D'INFOS :")
 print(resultat5)
-
 infos = json.loads(resultat5)
 print(f"\nClient : {infos['client']}")
 print(f"Budget : {infos['budget']}")
