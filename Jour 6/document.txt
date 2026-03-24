@@ -1,0 +1,8 @@
+SCC est une entreprise spécialisée dans l'intégration de solutions Microsoft.
+Elle emploie plus de 1500 collaborateurs en France.
+SCC propose des services de cloud Azure, de cybersécurité et d'intelligence artificielle.
+Le chiffre d'affaires de SCC France est d'environ 800 millions d'euros en 2025.
+SCC est partenaire Microsoft Gold depuis plus de 15 ans.
+L'équipe AI de SCC accompagne les clients dans la mise en place de solutions RAG et d'agents IA.
+Les principaux clients de SCC incluent des entreprises du CAC 40 et des administrations publiques.
+SCC propose des formations sur Azure OpenAI et les outils Microsoft Copilot.
