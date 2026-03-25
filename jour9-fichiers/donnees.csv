@@ -1,0 +1,11 @@
+date,client,description,montant,statut
+2026-01-15,Dupont SARL,Fournitures bureau,1250.00,payé
+2026-01-18,Martin & Co,Licence logiciel,3400.00,payé
+2026-01-22,Bernard SAS,Consulting,5200.00,impayé
+2026-02-01,Dupont SARL,Maintenance,800.00,payé
+2026-02-10,Tech Solutions,Serveur cloud,2100.00,impayé
+2026-02-15,Martin & Co,Formation,1500.00,payé
+2026-02-28,Bernard SAS,Audit,3800.00,impayé
+2026-03-05,Tech Solutions,Support technique,950.00,payé
+2026-03-10,Dupont SARL,Fournitures bureau,1100.00,payé
+2026-03-15,Martin & Co,Licence logiciel,3400.00,impayé
