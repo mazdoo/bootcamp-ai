@@ -1,0 +1,16 @@
+date,client,categorie,description,montant_ht,tva,montant_ttc,statut,echeance
+2026-01-05,Dupont SARL,Fournitures,Ramettes papier A4,450.00,90.00,540.00,paye,2026-02-05
+2026-01-12,Martin & Co,Logiciel,Licence CRM annuelle,3400.00,680.00,4080.00,paye,2026-02-12
+2026-01-18,Bernard SAS,Consulting,Audit financier Q4,5200.00,1040.00,6240.00,impaye,2026-02-18
+2026-01-25,Tech Solutions,Cloud,Hebergement serveur,1200.00,240.00,1440.00,paye,2026-02-25
+2026-02-03,Dupont SARL,Fournitures,Cartouches imprimante,280.00,56.00,336.00,paye,2026-03-03
+2026-02-10,Martin & Co,Consulting,Formation equipe vente,1500.00,300.00,1800.00,impaye,2026-03-10
+2026-02-15,Bernard SAS,Logiciel,Licence comptabilite,2800.00,560.00,3360.00,paye,2026-03-15
+2026-02-22,Tech Solutions,Cloud,Stockage donnees,950.00,190.00,1140.00,paye,2026-03-22
+2026-02-28,Global Corp,Consulting,Strategie digitale,8500.00,1700.00,10200.00,impaye,2026-03-28
+2026-03-05,Dupont SARL,Fournitures,Mobilier bureau,2100.00,420.00,2520.00,impaye,2026-04-05
+2026-03-10,Martin & Co,Logiciel,Module RH,1800.00,360.00,2160.00,paye,2026-04-10
+2026-03-15,Tech Solutions,Cloud,Migration serveur,3200.00,640.00,3840.00,paye,2026-04-15
+2026-03-18,Bernard SAS,Fournitures,Equipement reseau,1650.00,330.00,1980.00,paye,2026-04-18
+2026-03-22,Global Corp,Consulting,Audit cybersecurite,6500.00,1300.00,7800.00,impaye,2026-04-22
+2026-03-25,Dupont SARL,Cloud,Backup cloud annuel,1800.00,360.00,2160.00,paye,2026-04-25
