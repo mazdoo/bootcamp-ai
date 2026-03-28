@@ -1,0 +1,11 @@
+cd jour13-bookkeeper
+```
+
+Crée le fichier dans VS Code avec ce contenu :
+```
+streamlit
+anthropic
+pymupdf
+pandas
+openpyxl
+python-dotenv
