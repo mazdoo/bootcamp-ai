@@ -1,0 +1,9 @@
+date,reference,description,montant,type
+2026-03-03,VIR-001,Virement client Martin & Co,4080.00,credit
+2026-03-05,PAY-001,Paiement Bureau Express,1578.00,debit
+2026-03-10,PRE-001,Prelevement loyer bureau,2500.00,debit
+2026-03-15,VIR-002,Virement client Tech Solutions,3840.00,credit
+2026-03-18,ACH-001,Achat fournitures,336.00,debit
+2026-03-22,SAL-001,Paiement salaires,8500.00,debit
+2026-03-25,VIR-003,Virement client Global Corp,10200.00,credit
+2026-03-28,CHG-001,Charges sociales,3200.00,debit
